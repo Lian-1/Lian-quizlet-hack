@@ -1,15 +1,15 @@
 // ==UserScript==
-// @name         Lian Quizlet Hack
-// @namespace    Lian
-// @version      1.4
-// @description  Coming soon 1.5 New Feature 0.0 secound.
-// @author       Lian
+// @name         Lian Mod Menu
+// @namespace      Lian Mod Menu
+// @version      1.9
+// @description  Lian Mod Menu
+// @author       Lian Mod Menu
 // @match        https://quizlet.com/*/*
 // @grant        none
 // @license      none
 // ==/UserScript==
 
-//Ignore the variable gravityScore because it doesn't work any more, but I decided to keep the code here
+//Ignore the variable gravityScore because it doesn't work 
 var gravityScore,
 	 href = window.location.href;
 	//<br><br><button class="UIButton" id="customWaitButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>
@@ -18,43 +18,43 @@ var gravityScore,
 	function initLoad() {
 		if (href.includes("quizlet.com")) {
 			if (href.includes("/learn")) {
-				cAlert('<h2>Game Mode: Learn</h2>Thank you for using Lian Quizlet ExploitComing Soon 0.0 sec="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Learn</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon. Please note that this does not work anymore.<br><h4>Instructions:</h4>Just wait for this script to finish!<br><br><button class="UIButton" id="learnButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("learnButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					learn();
 				});
 
 			} else if (href.includes("/flashcards")) {
-				cAlert('<h2>Game Mode: Flashcards</h2>Thank you for using Lian Quizlet Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><h4>Changelog:</h4>+ Added Match time freeze for regular match and diagrams<br>+ Added Gravity score exploit to get ANY score you want!<br>+ Added custom alert box<br>+ Fixed graphics<br>- Removed useless alert boxes.<h4>Instructions:</h4>Umm why are you here? Go cheat somewhere else...<br><br><button class="UIButton" id="flashcardsButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Flashcards</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon.<br><h4>Changelog:</h4>+ Added Match time freeze for regular match and diagrams<br>+ Added Gravity score exploit to get ANY score you want!<br>+ Added custom alert box<br>+ Fixed graphics<br>- Removed useless alert boxes.<h4>Instructions:</h4>Umm why are you here? Go cheat somewhere else...<br><br><button class="UIButton" id="flashcardsButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("flashcardsButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 				});
 			} else if (href.includes("/write")) {
-				cAlert('<h2>Game Mode: Write</h2>Thank you for using Lian Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><h4>Instructions:</h4>You dont even have to wait,<br> this is my favorite one to watch!<br><br><button class="UIButton" id="writeButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Write</h2>Thank you for using Lian Mod Menu Exploit<br>Next Update Coming Soon.<br><h4>Instructions:</h4>You dont even have to wait,<br> this is my favorite one to watch!<br><br><button class="UIButton" id="writeButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("writeButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					write();
 				});
 			} else if (href.includes("/spell")) {
-				cAlert('<h2>Game Mode: Spell</h2>Thank you for using Lian Quizlet Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><h4>Instructions:</h4>Hold down enter and wait.<br><br><button class="UIButton" id="spellButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Spell</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon.<br><h4>Instructions:</h4>Hold down enter and wait.<br><br><button class="UIButton" id="spellButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("spellButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					spell();
 				});
 			} else if (href.includes("/test")) {
-				cAlert('<h2>Game Mode: Test</h2>Thank you for using Lian Quizlet Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><br><h4>Instructions:</h4>Right click to toggle answers.<br>(Be subtle when using)<br><br><button class="UIButton" id="testButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Test</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon.<br><br><h4>Instructions:</h4>Right click to toggle answers.<br>(Be subtle when using)<br><br><button class="UIButton" id="testButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("testButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					testMode();
 				});
 			} else if (href.includes("/micromatch")) {
-				cAlert('<h2>Game Mode: Micromatch</h2>Thank you for using Lian Quizlet Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br><h4>Match Time: </h4><input type="text" id="matchTimeInput" value="0"></input><br><br><button class="UIButton" id="micromatchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Micromatch</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon.<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br><h4>Match Time: </h4><input type="text" id="matchTimeInput" value="0"></input><br><br><button class="UIButton" id="micromatchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("micromatchButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					micromatch();
 				});
 			} else if (href.includes("/match")) {
-				cAlert('<h2>Game Mode: Match</h2>Thank you for using Lian Quizlet Exploit<br>Coming soon sec 0.0 to 1.5v sec<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br><h4>Match Time: </h4><input type="text" id="matchTimeInput" value="0"></input><br><br><button class="UIButton" id="matchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Match</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon.<br><h4>Instructions:</h4>The timer will be paused when at choosen time.<br>The answers will also be highlighted for you.<br>At your leisure, solve the questions.<br><h4>Match Time: </h4><input type="text" id="matchTimeInput" value="0"></input><br><br><button class="UIButton" id="matchButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("matchButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					match();
@@ -63,7 +63,7 @@ var gravityScore,
 				try {
 					document.getElementsByClassName("UIModal is-white is-open")[0].style.display = "none"
 				} catch (e) {}
-				cAlert('<h2>Game Mode: Gravity</h2>Thank you for using Lian Quizlet Exploit<br>CComing soon 0.0 sec to 1.5v  <br> <h4>: <input type="number" id="gravityScoreInput" value="4294967295" onchange="gravityScore = parseInt(this.value);"></input></h4><br><br><button class="UIButton" id="gravityButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
+				cAlert('<h2>Game Mode: Gravity</h2>Thank you for using Lian Mod Menu Quizlet Exploit<br>Next Update Coming Soon. Please note that this script does not work anymore. <br> <h4>What score would you like?: <input type="number" id="gravityScoreInput" value="4294967295" onchange="gravityScore = parseInt(this.value);"></input></h4><br><br><button class="UIButton" id="gravityButton" type="button"><span class="UIButton-wrapper"><span>Inject</span></span></button>');
 				getId("gravityButton").addEventListener("click", function() {
 					document.getElementById("customMessageContainer").remove();
 					gravity();
@@ -315,7 +315,7 @@ var gravityScore,
 	}
 
 	function cAlert(message) {
-		var html = '<div class="UIModal is-white is-open" id="customMessageContainer" role="document" tabindex="-1"> <div class="UIModal-box"> <div class="UIModalHeader"> <div class="UIModalHeader-wrapper"> <span class="UIModalHeader-close"> <div class="UIModalHeader-closeIconButton"> <span class="UIIconButton"> <button class="UIButton UIButton--inverted" type="button" id="customCloseButton" onclick="document.getElementById(&quot;customMessageContainer&quot;).remove();"> <span class="UIButton-wrapper"> <svg class="UIIcon UIIcon--x-thin"> <noscript></noscript> <use xlink:href="#x-thin"></use> <noscript></noscript> </svg> </span> </button> </span> </div> </span> <div class="UIModalHeader-childrenWrapper"> <h3 class="UIHeading UIHeading--three"><span id="customTitle">Lian Quizlet Exploit</span></h3> </div> </div> </div> <div class="UIModalBody"> <div class="UIDiv SetPageEmbedModal-content"> <div> <p class="UIParagraph"><span id="customMessage">'+message+'</span></p></div></div></div></div></div>';
+		var html = '<div class="UIModal is-white is-open" id="customMessageContainer" role="document" tabindex="-1"> <div class="UIModal-box"> <div class="UIModalHeader"> <div class="UIModalHeader-wrapper"> <span class="UIModalHeader-close"> <div class="UIModalHeader-closeIconButton"> <span class="UIIconButton"> <button class="UIButton UIButton--inverted" type="button" id="customCloseButton" onclick="document.getElementById(&quot;customMessageContainer&quot;).remove();"> <span class="UIButton-wrapper"> <svg class="UIIcon UIIcon--x-thin"> <noscript></noscript> <use xlink:href="#x-thin"></use> <noscript></noscript> </svg> </span> </button> </span> </div> </span> <div class="UIModalHeader-childrenWrapper"> <h3 class="UIHeading UIHeading--three"><span id="customTitle">Lian Mod Menu Quizlet Exploit</span></h3> </div> </div> </div> <div class="UIModalBody"> <div class="UIDiv SetPageEmbedModal-content"> <div> <p class="UIParagraph"><span id="customMessage">'+message+'</span></p></div></div></div></div></div>';
 		var j = document.createElement('div');
 		j.innerHTML = html;
 		document.body.appendChild(j);
